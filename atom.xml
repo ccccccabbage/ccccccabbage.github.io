@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ccccccabbage.github.io</id>
     <title>CAIMO</title>
-    <updated>2020-05-10T14:36:02.436Z</updated>
+    <updated>2020-05-10T19:14:04.294Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ccccccabbage.github.io"/>
     <link rel="self" href="https://ccccccabbage.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://ccccccabbage.github.io/images/avatar.png</logo>
     <icon>https://ccccccabbage.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CAIMO</rights>
+    <entry>
+        <title type="html"><![CDATA[NOVOPlasty 脚本组装线粒体全序列]]></title>
+        <id>https://ccccccabbage.github.io/post/20200511/</id>
+        <link href="https://ccccccabbage.github.io/post/20200511/">
+        </link>
+        <updated>2020-05-10T18:56:09.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="学习笔记">学习笔记</h1>
+<h2 id="使用-novoplasty-脚本组装线粒体全序列的尝试">使用 NOVOPlasty 脚本组装线粒体全序列的尝试</h2>
+<p>NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。</p>
+<p>下载连接（Perl）</p>
+<p>https://www.activestate.com/products/perl/downloads/</p>
+<p>下载连接（脚本）</p>
+<p>https://github.com/ndierckx/NOVOPlasty</p>
+<h5 id="使用方法">使用方法：</h5>
+<p>1.perl的安装</p>
+<p>直接双击运行下载的文件，按步骤安装。</p>
+<p>2.配置环境变量</p>
+<p>打开cmd命令编辑窗口，命令窗口输入perl -v查看环境变量是否配置好了。</p>
+<p>若配置好了会出现perl的版本等信息，若错误则出现不是内部或外部命令等。</p>
+<p>to be continue。。。。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello MoMo]]></title>
         <id>https://ccccccabbage.github.io/post/hello-momo/</id>
