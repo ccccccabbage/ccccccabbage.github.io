@@ -1,104 +1,100 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>NOVOPlasty 脚本组装线粒体全序列 | CAIMO</title>
-<link rel="shortcut icon" href="https://ccccccabbage.github.io/favicon.ico?v=1589167980567">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="AIMOMO">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://ccccccabbage.github.io/favicon.ico?v=1589168661555">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://ccccccabbage.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="NOVOPlasty 脚本组装线粒体全序列 | CAIMO - Atom Feed" href="https://ccccccabbage.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-    <meta name="description" content="学习笔记 NOVOPlasty
-使用 NOVOPlasty 脚本组装线粒体全序列
-NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。
-下载连接（Perl）
-https://www.activest..." />
-    <meta name="keywords" content="STUDY" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ccccccabbage.github.io">
-  <img class="avatar" src="https://ccccccabbage.github.io/images/avatar.png?v=1589167980567" alt="">
-  </a>
-  <h1 class="site-title">
-    CAIMO
-  </h1>
-  <p class="site-description">
-    AIMOMO
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://ccccccabbage.github.io">CAIMO</a></h3>
   </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              NOVOPlasty 脚本组装线粒体全序列
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-05-11
-              </span>
-              <span>
-                3 min read
-              </span>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>NOVOPlasty 脚本组装线粒体全序列</h1>
+            <p class="article-meta">
+              2020-05-11
               
-                <a href="https://ccccccabbage.github.io/tag/EhKUBW4kf/" class="post-tag">
-                  # STUDY
+                <a href="https://ccccccabbage.github.io/tag/EhKUBW4kf/" class="badge success">
+                  STUDY
                 </a>
               
-            </div>
+            </p>
             
-              <img class="post-feature-image" src="https://ccccccabbage.github.io/post-images/20200511.png" alt="">
+              <img src="https://ccccccabbage.github.io/post-images/20200511.png" alt="NOVOPlasty 脚本组装线粒体全序列">
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h1 id="学习笔记-novoplasty">学习笔记 NOVOPlasty</h1>
+            <div class="post-content">
+              <h1 id="学习笔记-novoplasty">学习笔记 NOVOPlasty</h1>
 <h2 id="使用-novoplasty-脚本组装线粒体全序列">使用 NOVOPlasty 脚本组装线粒体全序列</h2>
 <p>NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。</p>
 <p>下载连接（Perl）</p>
@@ -143,90 +139,108 @@ https://www.activest..." />
 <p><img src="https://ccccccabbage.github.io/post-images/1589166511140.png" alt="" loading="lazy">!</p>
 <p>这样就可以等待结果了。（这里只是用原始的config进行展示，也没有数据）</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-novoplasty">学习笔记 NOVOPlasty</a>
-<ul>
-<li><a href="#%E4%BD%BF%E7%94%A8-novoplasty-%E8%84%9A%E6%9C%AC%E7%BB%84%E8%A3%85%E7%BA%BF%E7%B2%92%E4%BD%93%E5%85%A8%E5%BA%8F%E5%88%97">使用 NOVOPlasty 脚本组装线粒体全序列</a><br>
-*<br>
-*<br>
-* <a href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：</a><br>
-* <a href="#1perl%E7%9A%84%E5%AE%89%E8%A3%85">1.perl的安装</a><br>
-* <a href="#2%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">2.配置环境变量</a><br>
-* <a href="#3%E4%BF%AE%E6%94%B9configtxt%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">3.修改config.txt配置文件</a><br>
-* <a href="#4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC">4.运行脚本</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
             </div>
           </article>
         </div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://ccccccabbage.github.io/post/hello-momo/">
+                <h3 class="post-title">
+                  Hello MoMo
+                </h3>
+              </a>
+            </div>
+          
+        </div>
         
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://ccccccabbage.github.io/post/hello-momo/">
-              <h3 class="post-title">
-                Hello MoMo
-              </h3>
-            </a>
-          </div>
-        
+      </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://ccccccabbage.github.io/images/avatar.png?v=1589168661555" class="no-responsive avatar">
+    <div class="text-muted">AIMOMO</div>
+    <div class="social-container">
+      
         
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://ccccccabbage.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://ccccccabbage.github.io/post/20200511/">NOVOPlasty 脚本组装线粒体全序列</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://ccccccabbage.github.io/post/about/">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://ccccccabbage.github.io/post/hello-momo/">Hello MoMo</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://ccccccabbage.github.io/tag/EhKUBW4kf/" class="badge warning">
+          STUDY
+        </a>
+      
+        <a href="https://ccccccabbage.github.io/tag/yqSlNXCI0/" class="badge warning">
+          CAIMO
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ccccccabbage.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
-      </div>
+
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+<script type="application/javascript">
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+AOS.init();
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+hljs.initHighlightingOnLoad()
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+</script>
 
-    </script>
+
+
+
   </body>
 </html>
