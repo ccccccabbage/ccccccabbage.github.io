@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ccccccabbage.github.io</id>
     <title>CAIMO</title>
-    <updated>2020-05-11T13:36:43.293Z</updated>
+    <updated>2020-05-11T13:38:37.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ccccccabbage.github.io"/>
     <link rel="self" href="https://ccccccabbage.github.io/atom.xml"/>
@@ -35,11 +35,11 @@
         <link href="https://ccccccabbage.github.io/post/20200511/">
         </link>
         <updated>2020-05-10T18:56:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>😎学习笔记 NOVOPlasty</p>
-<p>👍使用 NOVOPlasty 脚本组装线粒体全序列</p>
+        <summary type="html"><![CDATA[<p>😎学习笔记 NOVOPlasty<br>
+👍使用 NOVOPlasty 脚本组装线粒体全序列</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>😎学习笔记 NOVOPlasty</p>
-<p>👍使用 NOVOPlasty 脚本组装线粒体全序列</p>
+        <content type="html"><![CDATA[<p>😎学习笔记 NOVOPlasty<br>
+👍使用 NOVOPlasty 脚本组装线粒体全序列</p>
 <!-- more -->
 <p>NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。</p>
 <p>下载连接（Perl）</p>
