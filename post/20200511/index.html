@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>NOVOPlasty 脚本组装线粒体全序列 | CAIMO</title>
-<link rel="shortcut icon" href="https://ccccccabbage.github.io/favicon.ico?v=1589138041411">
+<link rel="shortcut icon" href="https://ccccccabbage.github.io/favicon.ico?v=1589166281556">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://ccccccabbage.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="NOVOPlasty 脚本组装线粒体全序列 | CAIMO - Atom Feed" href="https://ccccccabbage.github.io/atom.xml">
@@ -11,11 +11,11 @@
 
 
 
-    <meta name="description" content="学习笔记
-使用 NOVOPlasty 脚本组装线粒体全序列的尝试
+    <meta name="description" content="学习笔记 NOVOPlasty
+使用 NOVOPlasty 脚本组装线粒体全序列
 NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。
 下载连接（Perl）
-https://www.activestate.com/..." />
+https://www.activest..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -25,7 +25,7 @@ https://www.activestate.com/..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://ccccccabbage.github.io">
-  <img class="avatar" src="https://ccccccabbage.github.io/images/avatar.png?v=1589138041411" alt="">
+  <img class="avatar" src="https://ccccccabbage.github.io/images/avatar.png?v=1589166281556" alt="">
   </a>
   <h1 class="site-title">
     CAIMO
@@ -85,37 +85,71 @@ https://www.activestate.com/..." />
                 2020-05-11
               </span>
               <span>
-                1 min read
+                3 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="学习笔记">学习笔记</h1>
-<h2 id="使用-novoplasty-脚本组装线粒体全序列的尝试">使用 NOVOPlasty 脚本组装线粒体全序列的尝试</h2>
+                <h1 id="学习笔记-novoplasty">学习笔记 NOVOPlasty</h1>
+<h2 id="使用-novoplasty-脚本组装线粒体全序列">使用 NOVOPlasty 脚本组装线粒体全序列</h2>
 <p>NOVOPlasty 是一个perl脚本，在windows系统上运行之前要安装Perl编译器。</p>
 <p>下载连接（Perl）</p>
 <p>https://www.activestate.com/products/perl/downloads/</p>
 <p>下载连接（脚本）</p>
 <p>https://github.com/ndierckx/NOVOPlasty</p>
 <h5 id="使用方法">使用方法：</h5>
-<p>1.perl的安装</p>
+<h6 id="1perl的安装">1.perl的安装</h6>
 <p>直接双击运行下载的文件，按步骤安装。</p>
-<p>2.配置环境变量</p>
+<h6 id="2配置环境变量">2.配置环境变量</h6>
 <p>打开cmd命令编辑窗口，命令窗口输入perl -v查看环境变量是否配置好了。</p>
+<p>![perl -v](F:\MyBlog\NOTE\20200511\perl -v.png)</p>
 <p>若配置好了会出现perl的版本等信息，若错误则出现不是内部或外部命令等。</p>
-<p>to be continue。。。。</p>
+<h6 id="3修改configtxt配置文件">3.修改config.txt配置文件</h6>
+<p>NOVOPlasty脚本压缩包种提供了默认文件，只需要修改部分参数。</p>
+<p>文件内容：</p>
+<figure data-type="image" tabindex="1"><img src="F:%5CMyBlog%5CNOTE%5C20200511%5C2020-05-11_103734.png" alt="2020-05-11_103734" loading="lazy"></figure>
+<p>自己需要调整的参数：</p>
+<p><code>Project name</code>:自定义项目名称<br>
+<code>Type</code>: 如果是组装线粒体需要将这一项改为 mito<br>
+<code>Genome Range</code>:鱼类线粒体基因组序列长度通常为16—20kb左右，这一项可以改为16000-20000<br>
+<code>K-mer</code>：一般直接用默认的39即可<br>
+<code>Max memory</code>：<code>Extended log</code>：无需调整<br>
+<code>Save assembled reads</code>：改为yes的会将用于组装的数据以fasta的格式保留下来<br>
+<code>Seed Input</code>：种子序列的路径，软件包里提供了一个Seed_RUBP_cp.fasta文件，直接使用就可以<br>
+<code>Reference sequence</code>：参考序列的路径，没有参考序列，等号后面的内容需删除<br>
+<code>Variance detection</code>：直接空着就可以<br>
+<code>Chloroplast sequence</code>：组装线粒体基因组的时候需要把等号后面的内容删掉<br>
+<code>Read Length Insert size Platform</code>：这些参数可以在你的测序报告中找到<br>
+<code>Single/Paired</code>:选择双向测序数据PE<br>
+<code>Combined reads</code>：不用管<br>
+<code>Forward reads</code>：第一个fastq文件的路径<br>
+<code>Reverse reads</code>：第二个fastq文件的路径</p>
+<p>此部分参考：https://www.jianshu.com/p/88e660e46b28</p>
+<h6 id="4运行脚本">4.运行脚本</h6>
+<p>当配置文件config参数修改完毕后只需要运行脚本即可。</p>
+<p>通过cmd命令编辑窗口，打开脚本即可。</p>
+<p>①找到你下载的NOVOPlasty-master文件夹，我这里放到了E盘根目录，这里尽量路径中尽量不要用中文字符。</p>
+<p><u><strong>E：回车</strong></u>——进入E盘</p>
+<p><strong><u>cd NOVOPlasty-master</u></strong>——打开此文件夹</p>
+<p><strong><u>perl NOVOPlasty3.8.3.pl -c config.txt</u></strong>——运行脚本</p>
+<figure data-type="image" tabindex="2"><img src="F:%5CMyBlog%5CNOTE%5C20200511%5Cconfig.png" alt="config" loading="lazy"></figure>
+<p>这样就可以等待结果了。（这里只是用原始的config进行展示，也没有数据）</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">学习笔记</a>
+<li><a href="#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-novoplasty">学习笔记 NOVOPlasty</a>
 <ul>
-<li><a href="#%E4%BD%BF%E7%94%A8-novoplasty-%E8%84%9A%E6%9C%AC%E7%BB%84%E8%A3%85%E7%BA%BF%E7%B2%92%E4%BD%93%E5%85%A8%E5%BA%8F%E5%88%97%E7%9A%84%E5%B0%9D%E8%AF%95">使用 NOVOPlasty 脚本组装线粒体全序列的尝试</a><br>
+<li><a href="#%E4%BD%BF%E7%94%A8-novoplasty-%E8%84%9A%E6%9C%AC%E7%BB%84%E8%A3%85%E7%BA%BF%E7%B2%92%E4%BD%93%E5%85%A8%E5%BA%8F%E5%88%97">使用 NOVOPlasty 脚本组装线粒体全序列</a><br>
 *<br>
 *<br>
-* <a href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：</a></li>
+* <a href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：</a><br>
+* <a href="#1perl%E7%9A%84%E5%AE%89%E8%A3%85">1.perl的安装</a><br>
+* <a href="#2%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">2.配置环境变量</a><br>
+* <a href="#3%E4%BF%AE%E6%94%B9configtxt%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">3.修改config.txt配置文件</a><br>
+* <a href="#4%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC">4.运行脚本</a></li>
 </ul>
 </li>
 </ul>
