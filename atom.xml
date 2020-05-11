@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ccccccabbage.github.io</id>
     <title>CAIMO</title>
-    <updated>2020-05-11T03:06:07.312Z</updated>
+    <updated>2020-05-11T03:11:04.045Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ccccccabbage.github.io"/>
     <link rel="self" href="https://ccccccabbage.github.io/atom.xml"/>
@@ -28,12 +28,12 @@
 <p>直接双击运行下载的文件，按步骤安装。</p>
 <h6 id="2配置环境变量">2.配置环境变量</h6>
 <p>打开cmd命令编辑窗口，命令窗口输入perl -v查看环境变量是否配置好了。</p>
-<p>![perl -v](F:\MyBlog\NOTE\20200511\perl -v.png)</p>
+<p><img src="https://ccccccabbage.github.io/post-images/1589166452792.png" alt="" loading="lazy">!</p>
 <p>若配置好了会出现perl的版本等信息，若错误则出现不是内部或外部命令等。</p>
 <h6 id="3修改configtxt配置文件">3.修改config.txt配置文件</h6>
 <p>NOVOPlasty脚本压缩包种提供了默认文件，只需要修改部分参数。</p>
 <p>文件内容：</p>
-<figure data-type="image" tabindex="1"><img src="F:%5CMyBlog%5CNOTE%5C20200511%5C2020-05-11_103734.png" alt="2020-05-11_103734" loading="lazy"></figure>
+<p><img src="https://ccccccabbage.github.io/post-images/1589166493645.png" alt="" loading="lazy">!</p>
 <p>自己需要调整的参数：</p>
 <p><code>Project name</code>:自定义项目名称<br>
 <code>Type</code>: 如果是组装线粒体需要将这一项改为 mito<br>
@@ -58,7 +58,7 @@
 <p><u><strong>E：回车</strong></u>——进入E盘</p>
 <p><strong><u>cd NOVOPlasty-master</u></strong>——打开此文件夹</p>
 <p><strong><u>perl NOVOPlasty3.8.3.pl -c config.txt</u></strong>——运行脚本</p>
-<figure data-type="image" tabindex="2"><img src="F:%5CMyBlog%5CNOTE%5C20200511%5Cconfig.png" alt="config" loading="lazy"></figure>
+<p><img src="https://ccccccabbage.github.io/post-images/1589166511140.png" alt="" loading="lazy">!</p>
 <p>这样就可以等待结果了。（这里只是用原始的config进行展示，也没有数据）</p>
 ]]></content>
     </entry>
@@ -69,10 +69,10 @@
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎！<br>
-✍️  想用它记录你的生活、心情、知识、笔记、创意... ...</p>
+✍️  记录生活、心情、知识、笔记、创意... ...</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎！<br>
-✍️  想用它记录你的生活、心情、知识、笔记、创意... ...</p>
+✍️  记录生活、心情、知识、笔记、创意... ...</p>
 <!-- more -->
 <p>😘 Enjoy~</p>
 ]]></content>
