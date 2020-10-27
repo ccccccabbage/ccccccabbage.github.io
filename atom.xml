@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ccccccabbage.github.io</id>
     <title>CAIMO</title>
-    <updated>2020-05-24T05:05:31.925Z</updated>
+    <updated>2020-10-27T08:33:29.564Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ccccccabbage.github.io"/>
     <link rel="self" href="https://ccccccabbage.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://ccccccabbage.github.io/images/avatar.png</logo>
     <icon>https://ccccccabbage.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CAIMO</rights>
+    <entry>
+        <title type="html"><![CDATA[Mola mala]]></title>
+        <id>https://ccccccabbage.github.io/post/mola-mala/</id>
+        <link href="https://ccccccabbage.github.io/post/mola-mala/">
+        </link>
+        <updated>2020-10-27T08:28:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>翻车鲀</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>翻车鲀</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://ccccccabbage.github.io/post-images/1603787513916.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<p>🤙🤙🤙</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[答辩完毕]]></title>
         <id>https://ccccccabbage.github.io/post/da-bian-wan-bi/</id>
